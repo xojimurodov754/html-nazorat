@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pulni Nazorat Qilish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="site-header">
+      <h1 class="title">Pulni Nazorat Qilish</h1>
+      <p class="subtitle">Xarajatlaringizni hisoblang va pulingizni boshqaring</p>
+      <div class="author">@the_best_designer1</div>
+    </header>
+
+    <!-- Formlar: Boshlang'ich summa va Xarajat qo'shish -->
+    <section class="forms">
+      <div class="card initial-card">
+        <label for="initialInput" class="label">Boshlang'ich summa</label>
+        <div class="inline-row">
+          <input id="initialInput" type="number" placeholder="Boshlang'ich summani kiriting" />
+          <button id="saveInitialBtn" class="btn btn-primary">Saqlash</button>
+        </div>
+      </div>
+
+      <div class="card expense-card">
+        <label class="label">Xarajat qo'shish</label>
+        <input id="expenseName" type="text" placeholder="Xarajat nomi" />
+        <input id="expenseAmount" type="number" placeholder="Summa" />
+        <button id="addExpenseBtn" class="btn btn-blue">Qo'shish</button>
+      </div>
+    </section>
+
+    <!-- Statistika kartochkalari -->
+    <section class="stats">
+      <div class="stat card">
+        <div class="stat-label">Jami summa</div>
+        <div id="totalAmount" class="stat-value blue">0 so'm</div>
+      </div>
+      <div class="stat card">
+        <div class="stat-label">Sarflangan</div>
+        <div id="spentAmount" class="stat-value red">0 so'm</div>
+      </div>
+      <div class="stat card">
+        <div class="stat-label">Qolgan</div>
+        <div id="remainingAmount" class="stat-value green">0 so'm</div>
+      </div>
+    </section>
+
+    <!-- Xarajatlar tarixi -->
+    <section class="history card">
+      <div class="history-header">
+        <h2>Xarajatlar tarixi</h2>
+        <button id="clearAllBtn" class="clear-link">Hammasini o'chirish</button>
+      </div>
+
+      <div id="expensesList" class="expenses-list">
+        <p class="muted">Hozircha xarajatlar yo'q</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">© <span id="year"></span> Pulni Nazorat Qilish. Barcha huquqlar himoyalangan. @the_best_designer1</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

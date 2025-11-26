@@ -1,0 +1,174 @@
+/* --- Umumiy sozlamalar --- */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 0;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* --- Header --- */
+.site-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.author {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* --- Karta umumiy --- */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* --- Formlar bo'limi --- */
+.forms {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.initial-card,
+.expense-card {
+  flex: 1 1 280px;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.inline-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* --- Tugmalar --- */
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-blue {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-blue:hover {
+  opacity: 0.9;
+}
+
+/* --- Statistika --- */
+.stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.stat {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.stat-label {
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.blue { color: #2563eb; }
+.red { color: #dc2626; }
+.green { color: #16a34a; }
+
+/* --- Xarajatlar tarixi --- */
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.clear-link {
+  border: none;
+  background: none;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.expenses-list {
+  margin-top: 10px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.muted {
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* --- Footer --- */
+.site-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #64748b;
+}
